@@ -22,7 +22,7 @@ function ex3 (){
     let real = prompt ("Digite o valor em R$: ");
     // conversão para float 
     real = parseFloat (real);
-    let dolar = real*4.95;
+    let dolar = real/4.95;
     alert ("A conversão de R$ : " + real + " É igual a $ " + dolar)
 
 
