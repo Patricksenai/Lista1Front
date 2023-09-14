@@ -26,20 +26,69 @@ function desvio2(){
 }
 
 function desvio3 (){
-    let gestante = prompt ("Vocé é gestante ? digite S para sim e N para não" );
-    let idoso = prompt ("Você é maior de 65 anos ? digite S para sim e N para não");
-    let pcd = prompt ("Você tem alguma deficiência ? digite S para sim e N para não ");
+    let gestante = prompt ("Vocé é gestante ? digite S para sim e N para não" ).toLowerCase;
+    if (gestante == "sim"){
+        console.log ("Vá para a fila preferencial");
+    } else {
+    let idoso = prompt ("Você é maior de 65 anos ? digite S para sim e N para não").toLowerCase;
 
+      if (idoso = "sim"){
+        console.log ("Vá para a fila preferencial");
+      } else{
+    let pcd = prompt ("Você tem alguma deficiência ? digite S para sim e N para não ").toLowerCase;
+
+     if (pcd = "sim") {
+        prompt ("Vá para a fila preferencial");
+      } else {
+        console.log ("Vá para fila normal")
+
+      }    
+    }
 }
+          
 
-function desvio4(){
+
+function desvio4 (){
     let idade = prompt ("Digite sua idade ")
     idade = parseInt(idade)
 
     if (idade<16){
-        console.log
-
+        console.log (" não pode entrar")
+    } else if (idade <=16 && idade >=18){
+        console.log (" Entrada somente com responsaveis ")
+    }else{
+        console.log(" Entrada liberada")
     }
 }
+}
 
-desvio2()
+
+
+
+
+
+function desvio5 (){
+    let logindigitado = prompt(" Digite seu login");
+    let login="Patrick123"
+    let senhadigitada = prompt("Digite sua senha");
+    let senha = "1234"
+    
+    if (logindigitado == login && senha == senhadigitada) {
+        console.log("")
+    }else if (login != logindigitado){
+        console.log ("Login invalido")
+    }if (senha != senhadigitada){
+        console.log ("senha invalida")
+    }else {
+        console.log (" login e senha invalida")
+    }
+
+}
+
+function desvio6(){
+    
+}
+
+
+desvio5();
+
